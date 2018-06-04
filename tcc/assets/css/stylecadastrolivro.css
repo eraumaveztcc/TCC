@@ -1,0 +1,102 @@
+
+/*.red{*/
+    /*color:red;*/
+/*}*/
+/*.form-area*/
+/*{*/
+    /*background-color: red;*/
+    /*padding: 10px 40px 60px;*/
+    /*margin: 10px 0px 60px;*/
+    /*border: 1px solid GREY;*/
+/*}*/
+body{
+    margin:0;
+    padding:0px;
+    background: #903321 url("../../img/sujeirinhas.png") repeat-x center 0;
+    font-family: sans-serif;
+    position:center;
+}
+.cadastroSinopseBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    min-height: 200px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.name
+{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+h3{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #262626;
+    text-align: center;
+}
+.cadastroSinopseBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.cadastroSinopseBox input[type="text"],
+.cadastroSinopseBox input[type="text"],
+.cadastroSinopseBox input[type="number"],
+.cadastroSinopseBox input[type="text"],
+.cadastroSinopseBox input[type="text"],
+.cadastroSinopseBox textarea[type="textarea"]
+{
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 40px;
+    color:#262626;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.cadastroSinopseBox input[type="text"]:focus,
+.cadastroSinopseBox input[type="text"]:focus,
+.cadastroSinopseBox input[type="number"]:focus,
+.cadastroSinopseBox input[type="text"]:focus,
+.cadastroSinopseBox input[type="text"]:focus,
+.cadastroSinopseBox textarea[type="textarea"]:focus
+{
+    border-bottom: 2px solid #903321;
+}
+.formSinopse{
+    position: relative;
+}
+.formSiniopse span
+{
+    position: absolute;
+    top: 10px;
+    color: #262626;
+}
+.cadastroSinopseBox input[type="submit"]
+{
+    border:none ;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background: #903321;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.cadastroSinopseBox a{
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
