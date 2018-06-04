@@ -59,15 +59,12 @@ switch ($action){
         if (!isset($_POST['gravar'])) {
             include "../View/usuario/cadastrar.php";
         } else {
-            $nomeArquivo = date('dmYhis').$_FILES['foto']['name'];
-            $user = new Usuario($nomeArquivo, $_POST['nome'], $_POST['login'], $_POST['senha'], $_POST['email'], $_POST['telefone'], $_POST['cpf'], $_POST['endereco'], $_POST['tipuser']);
+            $user = new Usuario($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['datanascimento'], $_POST['sexo']);
             $crud = new UsuarioCrud();
-            move_uploaded_file($_FILES['foto']['tmp_name'], '../../assets/img/'.$nomeArquivo);
             $crud->insertUsuario($user);
-            header("Location: ?acao=login");
+            
+            //header("Location: ?acao=login");
         }
-
         break;
-
 
 }

@@ -72,7 +72,8 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li><a href="#">Formulário</a></li>
-                            <li><a href="?acao=login">Sign up</a></li>
+                            <li><a href="?acao=login">Entrar</a></li>
+                            <li><a href="?acao=cadastrar">Cadastrar</a></li>
                             <li><a href="?acao=logout">Sair</a></li>
                     </div>
                 </li>

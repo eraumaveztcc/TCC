@@ -86,8 +86,8 @@ class UsuarioCrud
         //EFETUA A CONEXAO
         $this->conexao = DBConnection::getConexao();
         //MONTA O TEXTO DA INSTRUÇÂO SQL
-        $sql = "insert into usuarios (nome, senha,endereco,telefone,email,cpf) 
-        values ('{$user->getNome()}','{$user->getSenha()}','{$user->getEndereco()}','{$user->getTelefone()}','{$user->getEmail()}','{$user->getCpf()}')";
+        $sql = "insert into Usuario (us_nome, us_email,us_senha,us_datanascimento, us_sexo) 
+        values ('{$user->getNome()}','{$user->getEmail()}','{$user->getSenha()}','{$user->getDatanascimento()}','{$user->getSexo()}')";
 
         try {//TENTA EXECUTAR A INSTRUCAO
 
